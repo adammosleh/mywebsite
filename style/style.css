@@ -5,6 +5,7 @@
     box-sizing: border-box;
     padding: 0px;
     margin: 0px;
+    
 } 
 html {
     overflow-x: hidden;
@@ -19,27 +20,13 @@ html {
     padding-top: 5px;
     
 } */
-.dropdown-menu{
-    padding-left: 10px;
-    background-color: aquamarine !important;
-    transition: all ease .5s;
-}
 
-.dropdown-menu a:hover{
-  
-    padding-left: 10px;
-    background-color: aqua;
-    transform: rotate3d(1.5);
-    
-}
-
-.dropdown-item{
-    
-   padding: 2px;
-   border: none;
- 
-   
-}
+@media (max-width: 576px) {
+    .box {
+      font-size: 14px;
+      padding: 10px;
+    }
+  }
 
 
 /* carousel */
