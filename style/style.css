@@ -43,12 +43,14 @@
   .dropdown-menu li a:hover {
     padding-bottom: 10px ;
     padding-top: 10px;
-    background-color: #0090b0;
     
+    background-color: #0090b0;
     transition: all 0.5s ease-in-out;
     transform: scale(1.1);
    
   }
+
+  
 /* .navbar{
     background-color: white !important;
     display: flex;
