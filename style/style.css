@@ -138,12 +138,20 @@
 
 
 @media screen and (max-width: 480px){
-  .navbar .container img , li a{
-    background-color: crimson;
-    padding-top: 5px;
-    padding-bottom: 5px;
+  .navbar .container .collapse li {
+   
+    padding-top: 1px;
+    padding-bottom: 1px;
     transition: all ease-in-out 0.5s;
+    border: 20px 10px solid white;
   }
+
+  .navbar .container button {
+    margin-bottom: 10px;
+  }
+
+
+  
 }
 
 @media screen and (max-width: 768px) {
