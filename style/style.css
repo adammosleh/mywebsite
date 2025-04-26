@@ -20,13 +20,14 @@
   
   
     
-.dropdown-menu{
+.navbar .container .collapse .navbar-nav .nav-item .dropdown-menu .dropdown-item{
     background-color: aqua;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+    border-bottom: 1px solid white;
 }
 
-  .dropdown-menu li:hover{
+.navbar .container .collapse .navbar-nav .nav-item .dropdown-menu .dropdown-item:hover{
     background-color: #0090b0;
     
   }
@@ -144,6 +145,15 @@
     padding-bottom: 1px;
     transition: all ease-in-out 0.5s;
     border: 20px 10px solid white;
+  }
+
+  .navbar .container .collapse .navbar-nav .nav-item .dropdown-menu li a {
+   
+    /* padding-top: 1px;
+    padding-bottom: 1px; */
+    transition: all ease-in-out 1s;
+    border: 20px 10px solid white;
+    background-color: #0090b0;
   }
 
   .navbar .container button {
