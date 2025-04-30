@@ -2,15 +2,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 *{
     font-family: "Cairo", sans-serif;
-    line-height: 1.6;
+    line-height: 1.8;
     box-sizing: border-box;
     padding: 0px;
     margin: 0px;
    
+    
   
  }
 
-
+ 
+ 
 
   .navbar {
    
@@ -19,25 +21,35 @@
     align-items: center;
   }
   
-  
+  .navbar .nav-item .nav-link:hover{
+    color: #0090b0;
+  }
     
 .navbar .container .collapse .navbar-nav .nav-item .dropdown-menu .dropdown-item{
-    background-color: aqua;
-    width:100%;
-    padding-left: 40px;
-    padding-right: 40px;
-    border-bottom: 1px solid white;
+    background-color: skyblue;
+    width:100% ;
+    padding-left: 10vw;
+    padding-right: 10vw;
+    border-bottom: 2px solid white;
     transition: all ease 0.5s;
 }
 
 .navbar .container .collapse .navbar-nav .nav-item .dropdown-menu .dropdown-item:hover{
     background-color: #0090b0;
+    
     /* padding-bottom: 10px ;
     padding-top: 10px;
     
     background-color: #0090b0;
     transition: all 0.5s ease-in-out;
     transform: scale(1.1); */
+  }
+  
+  
+
+  .navbar .container .collapse .navbar-nav .nav-item:hover .dropdown-menu{
+    display: block;
+    left: auto;
   }
 
   .dropdown-menu li a:hover {
@@ -50,6 +62,7 @@
    
   }
 
+  
   
 /* .navbar{
     background-color: white !important;
@@ -78,15 +91,13 @@
     background-color: #dbdbdb !important;
     border: none;
     width: 100% !important;
-    height: 100% !important;
+    height: auto !important ;
    
 }
 .card img{
     width: 100% ; 
-    height: 80vh;
-   
-    border: none;
-  
+    max-height: 60vw;
+    
 }
 
 
@@ -100,19 +111,19 @@
 }
 
 /* section */
-.container .section{
+.section{
   max-width: 100%;
   height: auto;
   margin: 30px;
   display: flex;
   justify-content: center;
 }
-.container .section .section1{
+.section .section1{
   width: 50%;
   padding: 0px 30px;
   
 }
-.container .section .section1 h2 {
+.section .section1 h1 p {
   
   font-size: 1.5rem;
   padding-bottom: 10px;
@@ -120,23 +131,26 @@
   
 }
 
-.container .section .section2{
-  width: 50%;
-}
 
-.container .section .section1 button:hover{
+.section .section1 button:hover{
     background-color: #0090b0;
     transition: all ease 1s;
     transform: scale(1.1);
 
 }
-.container .section .section2 img{
-  width: 100%;
+
+.section .section2{
+  width: 50% !important;
+
+}
+.section .section2 img{
+  width: 80%;
+  padding: 10px;
  
 }
 
-@media (max-width: 480px) {
-  h1, h2 {
+@media (max-width: 768px) {
+  h1, p {
     font-size: 1.2rem;
   }
 
@@ -145,43 +159,138 @@
   }
 }
 
-
+/* main1 ---------------- */
 
 .main{
+
     width: 100% ;
     height: 80vh !important;
-    
-    background-image: url('../images/p10.jpg');
+    /* background-image: url('../images/p4.jpg');
     background-size: cover;
     background-attachment: fixed;
+    background-color: lightslategray; */
     
-    
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+              url('../images/p5.jpg') center/cover ;
+   
+    background-attachment: fixed;
     padding-top: 200px;
     font-size: 20px;
-    background: rgba(red, green, blue, 1.5rem);
-    opacity: 1.0;
-}
-
-
+    opacity: 1.1;
+} 
 
 .main button{
- 
     width: 10rem;
-    background-color: #0090b0;
+    color: white;
 }
 .main button:hover{
-    background-color: aqua;
-    
-    transition: all ease 1s;
+    background-color: #0090b0;
+    transition: all ease .5s;
     transform: scale(1.1);
-    transition-delay: 0.5s;
 }
 
+/* main2------------------------ */
+
+.main2{
+
+  width: 100% ;
+  height: 80vh !important;
+  /* background-image: url('../images/p4.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+  background-color: lightslategray; */
+  
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+            url('../images/p5.jpg') center/cover ;
+ 
+  background-attachment: fixed;
+  padding-top: 200px;
+  font-size: 20px;
+  opacity: 1.1;
+} 
+
+.main2 button{
+  width: 10rem;
+  color: white;
+}
+.main2 button:hover{
+  background-color: #0090b0;
+  transition: all ease .5s;
+  transform: scale(1.1);
+}
+
+
+/* cards1 --------------------------- */
+.cards{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  background-color:#0090b0 ;
+}
 .cards .cards{
-    padding-left: 5px ;
+    padding: 5px 10px;
+    border: solid white 5px;
+    background-color: white;
+    margin: 5px;
+    border-radius: 5px;
+}
+.cards .card-body{
+  text-align: center;
+}
+.cards .card-body{
+  padding: 10px 20px;
+}
+.cards .card-text{
+  padding: 10px 10px;
+}
+.cards .card-title{
+  font-weight: bold;
+}
+
+.card-body a:hover{
+  transform: scale(1.1);
+  transition: all ease .5s;
 }
 
 
+/* cards2 --------------------------- */
+.cards2{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  background-color:white ;
+}
+.cards2 .cards2{
+    padding: 10px 10px;
+    background-color: white;
+    margin: 5px;
+    border-radius: 5px;
+}
+.cards2 .cards2:hover{
+  transform: scale(1.0);
+  transition: all ease .5s;
+  box-shadow: 5px 5px 5px 5px #dbdbdb;
+}
+
+.cards2 .card-body{
+  text-align: center;
+  padding: 10px 20px;
+}
+
+.cards2 .card-text{
+  padding: 10px 10px;
+}
+.cards2 .card-title{
+  font-weight: bold;
+}
+
+.card-body a:hover{
+  transform: scale(1.0);
+  transition: all ease .5s;
+}
+
+
+/* mediaquery --------- */
 
 @media screen and (max-width: 480px){
   .navbar .container .collapse li {
