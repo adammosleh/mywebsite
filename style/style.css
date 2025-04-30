@@ -11,18 +11,6 @@
   
  }
 
- @media  screen and (max-width:768px) 
- {
-   .opinoin .container .row{
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-    padding: 0px;
-    margin: 0px 0px;
-   }
-  
- }
-
   .navbar {
    
     display: flex;
