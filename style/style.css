@@ -107,42 +107,13 @@
 }
 
 /* section */
-.section{
-  max-width: 100%;
-  height: auto;
-  margin: 30px;
-  display: flex;
-  justify-content: center;
-}
-.section .section1{
-  width: 50%;
-  padding: 0px 30px;
-  
-}
-.section .section1 h1 p {
-  
-  font-size: 1.5rem;
-  padding-bottom: 10px;
-  font-weight: bold;
-  
-}
 
 
-.section .section1 button:hover{
-    background-color: #0090b0;
-    transition: all ease 1s;
-    transform: scale(1.1);
-
-}
-
-.section .section2{
-  width: 50% !important;
-
-}
-.section .section2 img{
-  width: 80%;
-  padding: 10px;
- 
+@media screen and (max-width: 480px){
+  .section{
+    display: block;
+    flex-wrap: wrap;
+  }
 }
 
 @media (max-width: 480px) {
