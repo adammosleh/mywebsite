@@ -6,8 +6,7 @@
     box-sizing: border-box;
     padding: 0px;
     margin: 0px;
-   
-    
+       
   
  }
 
@@ -330,4 +329,17 @@
     
   }
 }
+
+@media screen and (max-width:480px) {
+  button{
+    background-color: #0090b0;
+  }
   
+}
+  
+@media screen and (max-width:480px) {
+  .opinoin .opinoins {
+    display: flex;
+    flex-flow: wrap row;
+  }
+}
