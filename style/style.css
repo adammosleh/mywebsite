@@ -340,6 +340,8 @@
 @media screen and (max-width:480px) {
   .opinoin .opinoins {
     display: flex;
-    flex-flow: wrap row;
+    flex-flow: wrap column;
+    width: min(300px , 60%);
+    justify-content: space-evenly;
   }
 }
