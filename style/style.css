@@ -42,10 +42,10 @@
   
   
 
-  .navbar .container .collapse .navbar-nav .nav-item:hover .dropdown-menu{
+  /* .navbar .container .collapse .navbar-nav .nav-item:hover .dropdown-menu{
     display: block;
     left: auto;
-  }
+  } */
 
   .dropdown-menu li a:hover {
     padding-bottom: 10px ;
@@ -58,6 +58,14 @@
   }
 
   
+  @media screen and (min-width: 992px) {
+    /* عند الشاشات الكبيرة فقط، تظهر القائمة عند تمرير الماوس */
+    .navbar .nav-item.dropdown:hover .dropdown-menu {
+      display: block;
+      margin-top: 0;
+    }
+  }
+ 
   
 /* .navbar{
     background-color: white !important;
@@ -108,12 +116,12 @@
 /* section */
 
 
-@media screen and (max-width: 480px){
+/* @media screen and (max-width: 480px){
   .section{
     display: block;
     flex-wrap: wrap;
   }
-}
+} */
 
 @media (max-width: 480px) {
   h1, p {
@@ -308,7 +316,7 @@
 }
   
 @media screen and (max-width:480px) {
-  .opinoin .opinoins {
+    .opinoin .opinoins {
     display: flex;
     flex-flow: wrap column;
     width: min(300px , 60%);
