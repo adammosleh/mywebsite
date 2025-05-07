@@ -1,12 +1,16 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+html {
+  overflow-x: hidden;
+}
+
 *{
     font-family: "Cairo", sans-serif;
     line-height: 1.8;
     box-sizing: border-box;
     padding: 0px;
     margin: 0px;
-  
  }
 
   .navbar {
@@ -23,10 +27,11 @@
 .navbar .container .collapse .navbar-nav .nav-item .dropdown-menu .dropdown-item{
     background-color: skyblue;
     width:100% ;
-    padding-left: 10vw;
-    padding-right: 10vw;
+    padding-left: 5vw;
+    padding-right: 5vw;
     border-bottom: 2px solid white;
     transition: all ease 0.5s;
+    text-align: center;
 }
 
 .navbar .container .collapse .navbar-nav .nav-item .dropdown-menu .dropdown-item:hover{
@@ -58,14 +63,14 @@
   }
 
   
-  @media screen and (min-width: 992px) {
+   @media screen and (min-width: 992px) {
     /* عند الشاشات الكبيرة فقط، تظهر القائمة عند تمرير الماوس */
     .navbar .nav-item.dropdown:hover .dropdown-menu {
       display: block;
       margin-top: 0;
     }
   }
- 
+  
   
 /* .navbar{
     background-color: white !important;
@@ -95,11 +100,12 @@
     border: none;
     width: 100% !important;
     height: auto !important ;
-   
+  
 }
 .card img{
     width: 100% ; 
-    max-height: 60vw;
+    max-height: 40vw;
+   
     
 }
 
@@ -123,9 +129,10 @@
   }
 } */
 
-@media (max-width: 480px) {
-  h1, p {
+@media screen and (max-width: 480px) {
+   h2, p {
     font-size: 1rem;
+    line-height: 36px;
   }
 
   
@@ -135,62 +142,84 @@
 
 .main{
 
-    width: 100% ;
-    height: 80vh !important;
-    /* background-image: url('../images/p4.jpg');
-    background-size: cover;
-    background-attachment: fixed;
-    background-color: lightslategray; */
+  
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
+                url('../images/pg15.jpg');
+    background-size: cover;           /* تغطية كاملة بدون تكرار */
+    background-position: center;      /* تمركز الصورة */
+    background-repeat: no-repeat;     /* منع التكرار */
+    background-attachment: fixed;     /* لتثبيت الخلفية عند التمرير */
     
-    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
-              url('../images/p5.jpg') center/cover ;
-   
-    background-attachment: fixed;
-    padding-top: 200px;
+    padding-top: 300px;               /* تقليل الطول إذا أردتها أقصر */
+    padding-bottom: 300px;            /* إضافة هامش سفلي */
     font-size: 20px;
-    opacity: 1.1;
+    text-align: center;
+
 } 
 
 .main button{
-    width: 10rem;
-    color: white;
+  width: 100%;
+    max-width: 200px;
+    font-size: 16px;
 }
+
 .main button:hover{
     background-color: #0090b0;
     transition: all ease .5s;
     transform: scale(1.1);
 }
+.main h2{
+  font-size: 24px;
+}
+
+.main p{
+  font-size: 16px;
+    padding: 0 15px;
+}
+
 
 /* main2------------------------ */
 
 .main2{
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
+  url('../images/pg15.jpg');
+background-size: cover;           /* تغطية كاملة بدون تكرار */
+background-position: center;      /* تمركز الصورة */
+background-repeat: no-repeat;     /* منع التكرار */
+background-attachment: fixed;     /* لتثبيت الخلفية عند التمرير */
 
-  width: 100% ;
-  height: 80vh !important;
-  /* background-image: url('../images/p4.jpg');
-  background-size: cover;
-  background-attachment: fixed;
-  background-color: lightslategray; */
-  
-  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
-            url('../images/p5.jpg') center/cover ;
- 
-  background-attachment: fixed;
-  padding-top: 100px;
-  font-size: 20px;
-  opacity: 1.1;
+padding-top: 300px;               /* تقليل الطول إذا أردتها أقصر */
+padding-bottom: 300px;            /* إضافة هامش سفلي */
+font-size: 20px;
+text-align: center;
+
 } 
 
+@media (max-width: 768px) {
+  .main2 {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    font-size: 16px;
+  }
+}
 .main2 button{
-  width: 10rem;
-  color: white;
+  width: 100%;
+    max-width: 200px;
+    font-size: 16px;
 }
 .main2 button:hover{
   background-color: #0090b0;
   transition: all ease .5s;
   transform: scale(1.1);
 }
+.main2 h2{
+  font-size: 24px;
+}
 
+.main2 p{
+  font-size: 16px;
+    padding: 0 15px;
+}
 
 
 /* cards1 --------------------------- */
