@@ -96,17 +96,16 @@ html {
 }
 
 .card{
-    background-color: #dbdbdb !important;
+    background-color: #0090b0 !important;
     border: none;
     width: 100% !important;
     height: auto !important ;
-  
+   
 }
 .card img{
     width: 100% ; 
-    max-height: 60vw;
-   
-    
+    max-height: 50vw;
+   padding: 0px;
 }
 
 
@@ -118,6 +117,8 @@ html {
 .carousel-indicators button:hover{
     background-color: crimson;
 }
+
+
 
 /* section */
 
@@ -145,17 +146,18 @@ html {
   
     background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
                 url('../images/pg15.jpg');
-    background-size: cover;           /* تغطية كاملة بدون تكرار */
+    background-size: contain;           /* تغطية كاملة بدون تكرار */
     background-position: center;      /* تمركز الصورة */
     background-repeat: no-repeat;     /* منع التكرار */
     background-attachment: fixed;     /* لتثبيت الخلفية عند التمرير */
-    
+    background-color: #0090b0;
     padding-top: 300px;               /* تقليل الطول إذا أردتها أقصر */
     padding-bottom: 300px;            /* إضافة هامش سفلي */
     font-size: 20px;
     text-align: center;
 
 } 
+
 
 .main button{
   width: 100%;
@@ -183,11 +185,11 @@ html {
 .main2{
   background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
   url('../images/pg15.jpg');
-background-size: cover;           /* تغطية كاملة بدون تكرار */
+background-size: contain;           /* تغطية كاملة بدون تكرار */
 background-position: center;      /* تمركز الصورة */
 background-repeat: no-repeat;     /* منع التكرار */
 background-attachment: fixed;     /* لتثبيت الخلفية عند التمرير */
-
+background-color: #0090b0;
 padding-top: 300px;               /* تقليل الطول إذا أردتها أقصر */
 padding-bottom: 300px;            /* إضافة هامش سفلي */
 font-size: 20px;
@@ -196,9 +198,9 @@ text-align: center;
 } 
 
 @media (max-width: 768px) {
-  .main2 {
+  .main , .main2 {
     padding-top: 100px;
-    padding-bottom: 100px;
+    padding-bottom: 50px;
     font-size: 16px;
   }
 }
@@ -260,7 +262,7 @@ text-align: center;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  background-color:white ;
+  background-color: #edf2fa ;
 }
 .cards2 .cards2{
     padding: 10px 10px;
