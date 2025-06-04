@@ -138,17 +138,18 @@ html {
 /* main1 ---------------- */
 
 .main{
+  
+  
     background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
                 url('../images/pg15.jpg');
-    background-size: contain;           /* تغطية كاملة بدون تكرار */
+    background-size: cover;           /* تغطية كاملة بدون تكرار */
     background-position: center;      /* تمركز الصورة */
     background-repeat: no-repeat;     /* منع التكرار */
     background-attachment: fixed;     /* لتثبيت الخلفية عند التمرير */
     background-color: #0090b0;
     padding-top: 300px;               /* تقليل الطول إذا أردتها أقصر */
     padding-bottom: 300px;            /* إضافة هامش سفلي */
-    font-size: 20px;
-    text-align: center;
+    
     
 
 } 
