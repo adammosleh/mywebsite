@@ -138,17 +138,17 @@ html {
 /* main1 ---------------- */
 
 .main{
-  
-  
+    width: 100%;
+    
     background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
                 url('../images/pg15.jpg');
-    background-size: cover;           /* تغطية كاملة بدون تكرار */
+    background-size: 100% 100%;           /* تغطية كاملة بدون تكرار */
     background-position: center;      /* تمركز الصورة */
     background-repeat: no-repeat;     /* منع التكرار */
     background-attachment: fixed;     /* لتثبيت الخلفية عند التمرير */
     background-color: #0090b0;
-    padding-top: 300px;               /* تقليل الطول إذا أردتها أقصر */
-    padding-bottom: 300px;            /* إضافة هامش سفلي */
+    padding-top: 200px;               /* تقليل الطول إذا أردتها أقصر */
+    padding-bottom: 200px;            /* إضافة هامش سفلي */
     
     
 
@@ -181,28 +181,36 @@ html {
 .main2{
   background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
   url('../images/pg15.jpg');
-background-size: contain;           /* تغطية كاملة بدون تكرار */
+background-size: cover;           /* تغطية كاملة بدون تكرار */
 background-position: center;      /* تمركز الصورة */
 background-repeat: no-repeat;     /* منع التكرار */
 background-attachment: fixed;     /* لتثبيت الخلفية عند التمرير */
 background-color: #0090b0;
-padding-top: 300px;               /* تقليل الطول إذا أردتها أقصر */
-padding-bottom: 300px;            /* إضافة هامش سفلي */
+padding-top: 200px;               /* تقليل الطول إذا أردتها أقصر */
+padding-bottom: 200px;            /* إضافة هامش سفلي */
 font-size: 20px;
 text-align: center;
 
 } 
 
 @media (max-width: 480px) {
-  .main .main2 {
-    padding-top: 100px;
-    padding-bottom: 50px;
-    font-size: 16px;
+  .main , .main2 {
+    width: 100vw;
+    height: auto;
+    font-size: 0.5rem;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
+                url('../images/pg15.jpg');
+
+
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    backdrop-filter: blur(5px);
+    
   }
 }
 
 .main2 button{
-  width: 100%;
+  width: 50vw;
     max-width: 200px;
     font-size: 16px;
 }
@@ -212,7 +220,7 @@ text-align: center;
   transform: scale(1.1);
 }
 .main2 h2{
-  font-size: 24px;
+  font-size: 16px;
 }
 
 .main2 p{
